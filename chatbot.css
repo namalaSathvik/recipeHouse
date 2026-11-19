@@ -1,0 +1,13 @@
+/* Floating Chef Bot chat window */
+#chat-button { position: fixed; bottom: 20px; right: 20px; width: 60px; height: 60px; border-radius: 50%; border: none; background: #462c07; color: white; font-size: 28px; cursor: pointer; z-index: 1000; }
+#chat-box { position: fixed; bottom: 90px; right: 20px; width: 320px; height: 420px; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); display: none; flex-direction: column; overflow: hidden; z-index: 1000; font-family: Arial, sans-serif; }
+#chat-header { background: #462c07; color: white; padding: 12px; font-size: 16px; text-align: left; }
+#chat-messages { flex: 1; padding: 10px; overflow-y: auto; background: #f7f3ee; }
+.msg { max-width: 85%; padding: 8px 12px; margin: 6px 0; border-radius: 12px; font-size: 14px; text-align: left; white-space: pre-wrap; }
+.msg.bot { background: #e8dcc8; color: #222; }
+.msg.user { background: #c9841c; color: white; margin-left: auto; }
+#chat-quick { padding: 5px; background: #f7f3ee; display: flex; flex-wrap: wrap; gap: 5px; }
+#chat-quick button { font-size: 12px; padding: 4px 8px; border: 1px solid #c9841c; border-radius: 12px; background: white; color: #462c07; cursor: pointer; }
+#chat-form { display: flex; border-top: 1px solid #ddd; }
+#chat-input { flex: 1; padding: 10px; border: none; outline: none; font-size: 14px; }
+#chat-send { padding: 10px 15px; border: none; background: #c9841c; color: white; cursor: pointer; border-radius: 0; font-size: 14px; }
